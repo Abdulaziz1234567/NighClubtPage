@@ -1,0 +1,109 @@
+.menu__block {
+    background: rgb(37, 37, 37);
+    min-height: 100%;
+}
+
+.photos {
+    margin-top: 100px;
+}
+
+.photos__title h1 {
+    font-family: Suisse Intl;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 30px rgba(255, 255, 255, 0.32);
+    margin-top: 15px;
+}
+
+.photos-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 44px;
+}
+
+.photos-nav h3 {
+    font-family: Suisse Intl;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 118.3%;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+.photos-nav a {
+    font-family: Suisse Intl;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.haloween-photos img {
+    width: 100%;
+}
+
+.photo__slide-numbers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 56px;
+    margin-bottom: 56px;
+}
+
+.photo__slide-numbers a {
+    font-family: Suisse Intl;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.photo__slide-numbers a:hover {
+    color: #CB3B48;
+    background: #161615;
+    border: 1px solid #CB3B48;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    background: rgb(37, 37, 37)
+}
+
+.photo__img-hover {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    opacity: 0;
+    transition: 1s;
+}
+
+.photo__img-hover i {
+    font-size: 25px;
+    color: red;
+}
+
+.photos__img {
+    position: relative;
+}
+.photos__img:hover > .photo__img-hover{
+    opacity: 1;
+}
+
+@media(max-width:515px) {
+    .photos-nav h3 {
+        font-size: 18px;
+    }
+
+    .photos-nav a {
+        font-size: 12px;
+    }
+}

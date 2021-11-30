@@ -1,0 +1,44 @@
+.rules__text-box
+{
+display:flex;
+justify-content:space-between;
+align-items:flex-start;
+}
+.rules__text-box span
+{
+background: #C93A48;
+box-shadow: 0px 0px 8px #BD2D43;
+border-radius:50%;
+width: 20px;
+height: 10px;
+margin-right:10px;
+}
+.rules__text-box p,
+.rules__text p
+{
+color:white;
+font-family: Suisse Intl;
+font-size: 18px;
+line-height: 21px;
+}
+.rules_img img
+{
+    width: 100%;
+}
+.rules__text
+{
+    margin-top: 100px;
+}
+@media(max-width:1200px)
+{
+    .rules__text-box
+    {
+    display: none;        
+    }
+    .rules__text-box:nth-child(1),
+    .rules__text-box:nth-child(2),
+    .rules__text-box:nth-child(3)
+    {
+    display: block;
+    }
+}

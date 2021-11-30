@@ -1,0 +1,211 @@
+.barMenu-title {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.barMenu__h2-active {
+    font-family: Suisse Intl;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.barMenu__h2-unactive {
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #505050;
+    margin-left: 40px;
+}
+
+.barMenu__title-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barMenu__title-link li a {
+    font-family: Suisse Intl;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.barMenu-search input {
+    background: #222220;
+    border: 1px solid #B7B7B7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 23px;
+    color: white;
+}
+
+.barMenu-search button {
+    background: #CB3B48;
+    border: 1px solid #CB3B48;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 15px #CB3B48;
+    border-radius: 0px 5px 5px 0px;
+    color: white;
+    padding: 10px;
+    font-size: 23px;
+    margin-left: -10px;
+}
+
+.barMenu-search form {
+    display: flex;
+    align-items: center;
+}
+
+.barMenu__box {
+    color: white;
+    border: 2px solid #00000000;
+    border-radius: 30px;
+    background: url(https://potra4eno.ru/wp-content/themes/restoran_potracheno_th/images/menu_block/item_minbg.png) no-repeat center center / cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.barMenu__box img {
+    width: 100%;
+}
+
+.barMenu__box-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.barMenu__box p {
+    font-family: 'SuisseIntl-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #6dab58;
+}
+
+.barMenu__box-text {
+    padding: 40px;
+}
+
+.barMenu__box h3 {
+    font-size: 25px;
+}
+
+.barMenu__box-buttons button {
+    color: rgb(255, 255, 255);
+    background: #CB3B48;
+    border: 1px solid #cb3b48;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-family: 'SuisseIntl-Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s linear;
+    padding: 5px;
+    margin-left: 20px;
+}
+
+body {
+    position: relative;
+}
+
+.open__order-block {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.555);
+    z-index: 101;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    backdrop-filter: blur(5px);
+    padding-top: 10%;
+}
+
+.open__order-block form {
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: url(https://potra4eno.ru/wp-content/themes/restoran_potracheno_th/images/menu_block/item_minbg.png) no-repeat center center / cover;
+    box-shadow: 0 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.open__order-block p {
+    font-size: 20px;
+    color: white;
+    margin-top: 15px;
+    text-align: center;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px white,
+        0 0 20px white,
+        0 0 30px white;
+}
+
+.open__order-block input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 20px;
+    background: #fff;
+    color: rgb(27, 27, 27);
+    font-family: monospace;
+    font-size: 20px;
+    outline: none;
+    border: 1px solid transparent;
+
+}
+
+.open__order-block input:focus {
+    border: 1px solid transparent;
+    box-shadow: 0 0 8px 0px #fff;
+}
+
+.exit__order {
+    background: transparent;
+    font-size: 25px;
+    color: red;
+    text-shadow: 0 0 10px red;
+    cursor: pointer;
+    text-align: end;
+}
+
+.open__order-block button {
+    background: yellowgreen;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 20px;
+    font-family: cursive;
+    color: white;
+    text-transform: uppercase;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: none;
+    transition: background .5s;
+}
+
+.open__order-block button:hover {
+    background: rgb(112, 150, 38);
+    transition: background .5s;
+}
+
+.father__order {
+    opacity: 0;
+    display: none;
+}
